@@ -53,8 +53,9 @@ Windows (PowerShell):
 
 setx OPENAI_API_KEY "YOUR_API_KEY"
 
-Run
-python LLM_explorer.py
+---
+## Run
+‘’‘python LLM_explorer.py
 
 You will see a menu with options similar to:
 
@@ -66,9 +67,13 @@ Show tokenization
 
 Count tokens
 
-Exit
+---
 
-Configuration
+## Exit
+
+---
+
+##Configuration
 
 In LLM_explorer.py, the script defines:
 
@@ -85,14 +90,15 @@ tiktoken_show(text) / tiktoken_count(text): tokenizes and counts tokens for the 
 
 You can adjust:
 
-temperature
+-temperature
 
-max_output_tokens
+-max_output_tokens
 
-models list
+-models list
 
+---
 
-Known Issues / Quick Fix
+#Known Issues / Quick Fix
 tiktoken fallback function name
 
 If you see an error around get_coding, update:
@@ -107,8 +113,9 @@ encoding = tiktoken.get_encoding("cl100k_base")
 
 This matches the standard tiktoken API.
 
+---
 
-Notes
+##Notes
 
 The script sends requests to OpenAI; usage may incur API costs depending on your account and model.
 
