@@ -53,19 +53,18 @@ Windows (PowerShell):
 
 setx OPENAI_API_KEY "YOUR_API_KEY"
 
+
+# LLM Explorer
+
+A lightweight CLI tool for experimenting with LLM outputs and tokenization.
+
+## Run
+
+```bash
+python LLM_explorer.py
 ---
 ## Run
 ‘’‘python LLM_explorer.py
-
-You will see a menu with options similar to:
-
-Generate text
-
-Compare models
-
-Show tokenization
-
-Count tokens
 
 ---
 
