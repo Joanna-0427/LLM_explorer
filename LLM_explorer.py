@@ -53,7 +53,7 @@ def tiktoken_show(text):
         encoding = tiktoken.encoding_for_model(model)
         return encoding.encode(text)
     except Exception:
-        encoding = tiktoken.get_coding('cl100k_base')
+        encoding = tiktoken.get_encoding('cl100k_base')
         return encoding.encode(text)
 
 
@@ -62,7 +62,7 @@ def tiktoken_count(text):
     try:
         encoding = tiktoken.encoding_for_model(model)
     except Exception:
-        encoding = tiktoken.get_coding('cl100k_base')
+        encoding = tiktoken.get_encoding('cl100k_base')
     token = encoding.encode(text)
     return len(token)
     
